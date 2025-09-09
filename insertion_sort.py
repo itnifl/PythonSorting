@@ -1,7 +1,17 @@
 # coding: utf-8
 
 def insertion_sort(A, n):
-    # classic insertion sort (sorts in place and returns the list)
+    """
+    Insertion Sort:
+    We loop through the array starting from the second element.
+    For each element (the 'key'), we compare it with the elements to the left.
+    We shift all larger elements one position to the right until we find
+    the correct position for the key.
+    The key is then placed so that everything on the left is <= key
+    and everything on the right is >= key.
+    We continue with the next key until the whole array is sorted.
+    """
+
     for i in range(1, n):
         key = A[i]
         j = i - 1
